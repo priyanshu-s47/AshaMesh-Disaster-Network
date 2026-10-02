@@ -1,81 +1,105 @@
-# 🌍 AshaMesh — Real-Time Disaster Response Network
-
-<p align="center">
-  <img src="https://vercel.app" alt="Header Animation" />
-</p>
-
-### ⚡ "Decentralized Crisis Management Engine Connecting Victims to First Responders under High Throughput"
-
----
-
-## 🧭 Project Blueprint & Core Framework Topics
-
-Is repository mein software engineering aur enterprise-grade backend development ke yeh **5 main pillars** cover kiye gaye hain:
-1. **Service Mesh Infrastructure:** Inbuilt dynamic service discovery and edge routing protocol pipelines.
-2. **High-Velocity Ingestion Architecture:** Multi-threaded async processing endpoints to capture massive distress payloads.
-3. **Event-Driven Streaming Fabric:** Standalone decoupled transaction queuing to manage heavy platform load spikes.
-4. **DevOps & Container Orchestration:** Production-ready containerized ecosystems ready to scale on Kubernetes clusters.
-5. **Automated Integration Pipelines:** Strict dynamic testing assertions isolating system logic from local ports.
-
----
-
-## 🏛️ System Architecture Blueprint
+# ⚡ ASHAMESH — REAL-TIME DISASTER RESPONSE NETWORK
 
 ```text
-               [ Distress Victims / Postman Automated Simulators ]
-                                      │
-                                      ▼
-                [ 🛡️ Spring Cloud API Gateway (Port: 8080) ]
-                                      │
-           ┌─────────────────────────┴─────────────────────────┐
-           ▼ (Dynamic Service Discovery via Eureka Server)    ▼
- [ 📡 Eureka Server (8761) ]                         [ 🚨 SOS-Ingestion-Service (8081) ]
-                                                               │
-                                                               ▼
-                                                    [ 💾 PostgreSQL Database ]
-                                                               │
-                                                               ▼
-                                                    [ 🐳 Docker Kafka (9092) ]
-                                                    (Topic: disaster-sos-topic)
+========================================================================
+   ___          _        __  __           _      
+  / _ \   ___  | |__    |  \/  |  ___ ___| |__   
+ / /_\ \ / __| | '_ \   | |\/| | / _ \ __| '_ \  
+/ / _ \ \\__ \ | | | |  | |  | ||  __/__ \ | | | 
+\/_/   \_\___/ |_| |_|  |_|  |_| \___|___/_| |_| 
+                                                 
+ >> CRITICAL CRISIS CORE ENGINE | BY PRIYANSHU SHARMA <<
+========================================================================
+```
+
+> **🚨 HIGH-ALERT SYSTEMS ARCHITECTURE:** A hyper-scalable, decentralized emergency routing mesh engineered to connect distress victims with rescue volunteers instantly under heavy traffic spikes.
+
+---
+
+## 🧭 PROJECT BLUEPRINT & PILLARS
+
+Is system mein core software engineering ke yeh **5 main systems architectural pillars** cover kiye gaye hain:
+
+*   **🎛️ Distributed Service Mesh:** Centralized internal node routing and phonebook service registration.
+*   **⚡ High-Velocity Ingestion:** Non-blocking async endpoints engineered to capture massive distress payloads.
+*   **🐳 Event-Driven Fabric:** Decoupled transaction queuing using containerized brokers to manage platform load.
+*   **💾 Spatial Data Routing:** Highly optimized location coordinate query filtering at the database layer.
+*   **🧪 Pipeline Automation:** Dynamic testing environments using custom script variables isolating system logic from local hardcoded ports.
+
+---
+
+## 🏛️ SYSTEM ARCHITECTURE BLUEPRINT
+
+```text
+                 +---------------------------------------------+
+
+                 |  Distress Victims / Automated Test Suites   |
+                 +---------------------------------------------+
+                                        |
+                                        ▼
+                 +---------------------------------------------+
+
+                 |  🛡️ SPRING CLOUD API GATEWAY (Port: 8080)   |
+                 +---------------------------------------------+
+                                        |
+             +--------------------------┴--------------------------+
+
+             | (Dynamic Discovery via Eureka Discovery Registry)    |
+             ▼                                                     ▼
++--------------------------+                         +--------------------------+
+
+| 📡 EUREKA SERVER (8761)  |                         | 🚨 SOS-SERVICE (8081)    |
++--------------------------+                         +--------------------------+
+                                                                   |
+                                                                   ▼
+                                                     +--------------------------+
+
+                                                     | 💾 POSTGRESQL DATABASE   |
+                                                     +--------------------------+
+                                                                   |
+                                                                   ▼
+                                                     +--------------------------+
+
+                                                     | 🐳 DOCKER KAFKA (9092)   |
+                                                     | Topic: disaster-sos-topic|
+                                                     +--------------------------+
 ```
 
 ---
 
-## 🚀 Microservices System Map
+## 🚀 MICROSERVICES SYSTEM MAP
 
-*   **📡 Eureka Registry (Port 8761):** The centralized phonebook infrastructure tracking operational state of all node networks.
-*   **🛡️ API Gateway (Port 8080):** The strict perimeter gateway proxy masking downstream ports and executing prefix mutations.
-*   **🚨 SOS Ingestion Service (Port 8081):** Captures geolocation coordinates, executes ACID compliant persistence, and pushes parallel payloads to streams.
+*   **📡 Eureka Registry (`port: 8761`):** The central runtime phonebook infrastructure tracking operational state of all microservice nodes.
+*   **🛡️ API Gateway (`port: 8080`):** The strict perimeter gateway handling dynamic path abstraction, service load balancing, and secure edge handshakes.
+*   **🚨 SOS Ingestion Service (`port: 8081`):** Captures geolocation coordinates, executes ACID compliant persistence into PostgreSQL, and fires binary payload events to streams.
 
 ---
 
-## 🛠️ The Tech Grid
+## 🛠️ THE INFRASTRUCTURE GRID
 
 ```text
-⚙️ CORE ENGINE  : Java 25 / Spring Boot 3.x / Spring Data JPA
-📡 ROUTING FABRIC: Spring Cloud Gateway / Netflix Eureka Service Mesh
-🐳 DATA STREAM   : Apache Kafka Event Engine running inside Docker Core
-💾 STORAGE NODES : PostgreSQL Relational Ledger Instance
-🧪 TESTING PIPES : Postman Automation Runner / Environment Injector
+[⚙️ CORE DRIVER]   : Java 25 / Spring Boot 3.x / Spring Data JPA
+[📡 GATEWAY MESH]  : Spring Cloud Gateway / Netflix Eureka Client
+[🐳 EVENT FABRIC]  : Apache Kafka Ecosystem running inside Docker Core
+[💾 STORAGE NODE]  : PostgreSQL Enterprise Relational Engine
+[🧪 TESTING PIPES] : Postman Automation Runner / Environment Injector
 ```
 
 ---
 
-## ⚙️ Local Infrastructure Quickstart
+## ⚙️ LOCAL INFRASTRUCTURE QUICKSTART
 
-Follow these strict chronological steps to initialize the node clusters on your machine:
-
-### 1. Fire up the Kafka Backbone (Docker Client)
-Ensure Docker Desktop is active on your host computer, then fire this automated command:
+### 1. Fire up the Kafka Backbone (Docker)
+Ensure Docker Desktop is active on your host computer, then fire this terminal command:
 ```bash
 docker run -d --name kafka -p 9092:9092 apache/kafka:4.1.1
 ```
 
 ### 2. Microservice Deployment Order
-Launch the application nodes in this sequence using IntelliJ IDEA configuration runner:
-1. **`EurekaServerApplication`** ➔ Verify active address index portal at `http://localhost:8761`
-2. **`ApiGatewayApplication`** ➔ Wait for perimeter handshake configuration logs to clear
-3. **`SosServiceApplication`** ➔ Establish fresh physical database connections
+Launch the application nodes sequentially in IntelliJ IDEA:
+1.  **`EurekaServerApplication`** ➔ Verify active registry dashboard index portal at `http://localhost:8761`
+2.  **`ApiGatewayApplication`** ➔ Wait for routing mesh perimeter logs to settle
+3.  **`SosServiceApplication`** ➔ Establish live physical database connections
 
 ### 3. Execution Contracts & API Integration
 Assign a generic environment variable named `gatewayurl` inside your Postman workspace pointing to your gateway edge instance (`http://localhost:8080`).
@@ -97,8 +121,8 @@ POST {{gatewayurl}}/sos-service/api/sos/trigger
 ```
 
 ---
-<p align="center">
-  <img src="https://vercel.app" alt="Footer Banner" />
-</p>
-
-*Designed and engineered with strict software architectural principles by Priyanshu Sharma.*
+```text
+========================================================================
+   STRICT SYSTEM CONGRUENCY MAINTAINED | PRODUCTION-GRADE ARCHITECTURE
+========================================================================
+```
