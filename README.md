@@ -1,28 +1,38 @@
 # 🌍 AshaMesh — Real-Time Disaster Response Network
 
-[![Spring Boot](https://shields.io)](https://spring.io)
-[![Java](https://shields.io)](https://oracle.com)
-[![Apache Kafka](https://shields.io)](https://apache.org)
-[![Docker](https://shields.io)](https://docker.com)
+<p align="center">
+  <img src="https://vercel.app" alt="Header Animation" />
+</p>
 
-> A hyper-scalable, decentralized emergency routing engine designed to connect distress victims with rescue volunteers and NGOs in real-time under high-throughput situations.
+### ⚡ "Decentralized Crisis Management Engine Connecting Victims to First Responders under High Throughput"
+
+---
+
+## 🧭 Project Blueprint & Core Framework Topics
+
+Is repository mein software engineering aur enterprise-grade backend development ke yeh **5 main pillars** cover kiye gaye hain:
+1. **Service Mesh Infrastructure:** Inbuilt dynamic service discovery and edge routing protocol pipelines.
+2. **High-Velocity Ingestion Architecture:** Multi-threaded async processing endpoints to capture massive distress payloads.
+3. **Event-Driven Streaming Fabric:** Standalone decoupled transaction queuing to manage heavy platform load spikes.
+4. **DevOps & Container Orchestration:** Production-ready containerized ecosystems ready to scale on Kubernetes clusters.
+5. **Automated Integration Pipelines:** Strict dynamic testing assertions isolating system logic from local ports.
 
 ---
 
 ## 🏛️ System Architecture Blueprint
 
 ```text
-               [ Distress Victims / Postman Load Simulators ]
-                                     │
-                                     ▼
-                [ Spring Cloud API Gateway (Port: 8080) ]
-                                     │
+               [ Distress Victims / Postman Automated Simulators ]
+                                      │
+                                      ▼
+                [ 🛡️ Spring Cloud API Gateway (Port: 8080) ]
+                                      │
            ┌─────────────────────────┴─────────────────────────┐
            ▼ (Dynamic Service Discovery via Eureka Server)    ▼
- [ Eureka Server (8761) ]                            [ SOS-Ingestion-Service (8081) ]
+ [ 📡 Eureka Server (8761) ]                         [ 🚨 SOS-Ingestion-Service (8081) ]
                                                                │
                                                                ▼
-                                                    [ PostgreSQL (ashamesh_db) ]
+                                                    [ 💾 PostgreSQL Database ]
                                                                │
                                                                ▼
                                                     [ 🐳 Docker Kafka (9092) ]
@@ -31,47 +41,64 @@
 
 ---
 
-## 🚀 Microservices Breakdown
+## 🚀 Microservices System Map
 
-* **📡 Eureka Registry (Port 8761):** The central phonebook server handling real-time microservice instances dynamic registry.
-* **🛡️ API Gateway (Port 8080):** The system entry gate handling absolute client request routing and path abstraction.
-* **🚨 SOS Ingestion Service (Port 8081):** Captures high-velocity distress calls, persists payload into PostgreSQL database, and streams asynchronous events instantly.
+*   **📡 Eureka Registry (Port 8761):** The centralized phonebook infrastructure tracking operational state of all node networks.
+*   **🛡️ API Gateway (Port 8080):** The strict perimeter gateway proxy masking downstream ports and executing prefix mutations.
+*   **🚨 SOS Ingestion Service (Port 8081):** Captures geolocation coordinates, executes ACID compliant persistence, and pushes parallel payloads to streams.
 
 ---
 
-## 🛠️ The Tech Stack Grid
+## 🛠️ The Tech Grid
 
-| Layer | Technology | Status |
-| :--- | :--- | :--- |
-| **Core Framework** | Java 25, Spring Boot 3.x, Spring Data JPA | ✅ Implemented |
-| **Service Mesh** | Spring Cloud Gateway, Netflix Eureka | ✅ Implemented |
-| **Message Broker** | Apache Kafka (Event-Driven Stream via Docker) | ✅ Implemented |
-| **Database** | PostgreSQL Server | ✅ Implemented |
-| **Testing Suite** | Postman Advanced Multi-Environment Runner | ✅ Implemented |
+```text
+⚙️ CORE ENGINE  : Java 25 / Spring Boot 3.x / Spring Data JPA
+📡 ROUTING FABRIC: Spring Cloud Gateway / Netflix Eureka Service Mesh
+🐳 DATA STREAM   : Apache Kafka Event Engine running inside Docker Core
+💾 STORAGE NODES : PostgreSQL Relational Ledger Instance
+🧪 TESTING PIPES : Postman Automation Runner / Environment Injector
+```
 
 ---
 
 ## ⚙️ Local Infrastructure Quickstart
 
-Follow these sequential steps to boot up the complete grid on your local machine:
+Follow these strict chronological steps to initialize the node clusters on your machine:
 
-### 1. Fire up the Kafka Backbone (Docker)
+### 1. Fire up the Kafka Backbone (Docker Client)
+Ensure Docker Desktop is active on your host computer, then fire this automated command:
 ```bash
 docker run -d --name kafka -p 9092:9092 apache/kafka:4.1.1
 ```
 
-### 2. Boot Order (IntelliJ IDEA)
-Launch the microservices in the exact chronological order:
-1. `EurekaServerApplication` (Registry Layer) ➔ Wait for Dashboard at `http://localhost:8761`
-2. `ApiGatewayApplication` (Routing Edge)
-3. `SosServiceApplication` (Core Ingestion Engine)
+### 2. Microservice Deployment Order
+Launch the application nodes in this sequence using IntelliJ IDEA configuration runner:
+1. **`EurekaServerApplication`** ➔ Verify active address index portal at `http://localhost:8761`
+2. **`ApiGatewayApplication`** ➔ Wait for perimeter handshake configuration logs to clear
+3. **`SosServiceApplication`** ➔ Establish fresh physical database connections
 
-### 3. Automated Postman Testing Pipeline
-- Set up a Postman Environment Variable `{{gatewayurl}}` pointing to `http://localhost:8080`.
-- Trigger real-time SOS calls using the orchestrated edge routing path:
+### 3. Execution Contracts & API Integration
+Assign a generic environment variable named `gatewayurl` inside your Postman workspace pointing to your gateway edge instance (`http://localhost:8080`).
+
+Fire structured live triggers using this unified integration route:
 ```http
 POST {{gatewayurl}}/sos-service/api/sos/trigger
 ```
 
+**Request Object Contract:**
+```json
+{
+  "victimName": "Priyanshu Sharma",
+  "phoneNumber": "9870945257",
+  "emergencyType": "FLOOD",
+  "latitude": 29.9680,
+  "longitude": 77.5460
+}
+```
+
 ---
-*Developed with ❤️ by Priyanshu Sharma as an Enterprise Architecture Showcase.*
+<p align="center">
+  <img src="https://vercel.app" alt="Footer Banner" />
+</p>
+
+*Designed and engineered with strict software architectural principles by Priyanshu Sharma.*
