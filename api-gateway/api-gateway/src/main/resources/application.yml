@@ -1,0 +1,17 @@
+server :
+  port : 8080 # all requests will be come to the port 8080
+
+spring :
+  application:
+    name: api-gateway # in Eureka server this name will be shown for this app
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # this line will automatically allocate the microservices through Eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # location of our address book (EUREKA)
+
