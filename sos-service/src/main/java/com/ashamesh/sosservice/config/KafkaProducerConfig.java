@@ -22,11 +22,16 @@ public class KafkaProducerConfig {
         Map<String, Object> configProps = new HashMap<>();
 
         // Setting the Local Address of Docker Container
-        configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:909");
+        configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
 
         // Defining data serializers
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+
+        // 🚨 NEW IMPLEMENTATION: Timeout aur Connection drops se bachne ke liye constraints
+        configProps.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, "5000"); // 5 seconds max wait
+        configProps.put(ProducerConfig.MAX_BLOCK_MS_CONFIG, "5000");       // Prevent app freezing
+        configProps.put(ProducerConfig.RETRIES_CONFIG, 2);
 
         return new DefaultKafkaProducerFactory<>(configProps);
 
